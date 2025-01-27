@@ -13,6 +13,5 @@ router.post('/', gadgetsController.addGadget); // Adds a new gadget
 router.patch('/:id', gadgetsController.updateGadget); // Updates a gadget
 router.delete('/:id', authorize('admin'), gadgetsController.decommissionGadget); // Decommissions a gadget
 router.post('/:id/self-destruct', gadgetsController.selfDestructGadget); // Triggers self-destruction
-router.get('/gadgets', gadgetsController.getGadgets); // Retrieves gadgets with filters
 
 module.exports = router;
