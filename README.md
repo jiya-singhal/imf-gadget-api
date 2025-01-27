@@ -1,1 +1,1 @@
-API Documentation: [Postman Collection]([https://www.postman.com/your-unique-link](https://imfgadet.postman.co/workspace/Imf_gadet-Workspace~3ac23aa8-c342-4ad6-b10e-b82f54922744/collection/36707641-dd785559-fd59-4ba9-9307-4bc8b913ee29?action=share&creator=36707641))
+API Documentation: [Postman Collection]([https://imfgadet.postman.co/workspace/Imf_gadet-Workspace~3ac23aa8-c342-4ad6-b10e-b82f54922744/collection/36707641-dd785559-fd59-4ba9-9307-4bc8b913ee29?action=share&creator=36707641])
