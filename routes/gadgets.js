@@ -4,13 +4,15 @@ const gadgetsController = require('../controllers/gadgetsController');
 const authenticate = require('../middlewares/authenticate');
 const authorize = require('../middlewares/authorize');
 
+// Ensure authenticate middleware is properly defined and applied
 router.use(authenticate);
 
-router.get('/', gadgetsController.getAllGadgets);
-router.post('/', gadgetsController.addGadget);
-router.patch('/:id', gadgetsController.updateGadget);
-router.delete('/:id', authorize('admin'), gadgetsController.decommissionGadget);
-router.post('/:id/self-destruct', gadgetsController.selfDestructGadget);
-router.get('/', gadgetsController.getGadgets);
+// Define your routes
+router.get('/', gadgetsController.getAllGadgets); // Retrieves all gadgets
+router.post('/', gadgetsController.addGadget); // Adds a new gadget
+router.patch('/:id', gadgetsController.updateGadget); // Updates a gadget
+router.delete('/:id', authorize('admin'), gadgetsController.decommissionGadget); // Decommissions a gadget
+router.post('/:id/self-destruct', gadgetsController.selfDestructGadget); // Triggers self-destruction
+router.get('/gadgets', gadgetsController.getGadgets); // Retrieves gadgets with filters
 
 module.exports = router;
